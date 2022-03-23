@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "60e61722-3649-44b2-936f-ecf22fe87312": {
+      "ProjectGuid": "60e61722-3649-44b2-936f-ecf22fe87312",
+      "DisplayName": "MedTech",
+      "ColorIndex": 0
+    },
+    "07c30dae-7112-47f9-8130-86c828cf7f67": {
+      "ProjectGuid": "07c30dae-7112-47f9-8130-86c828cf7f67",
+      "DisplayName": "Entities",
+      "ColorIndex": 1
+    },
+    "74b7d106-da90-489d-ba29-0838c36ace8c": {
+      "ProjectGuid": "74b7d106-da90-489d-ba29-0838c36ace8c",
+      "DisplayName": "DataAccess",
+      "ColorIndex": 2
+    },
+    "f98135d0-b972-4009-ac04-df01791d2c6f": {
+      "ProjectGuid": "f98135d0-b972-4009-ac04-df01791d2c6f",
+      "DisplayName": "Services",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "5ef3619c-71b5-4254-a9be-445da65426d9": {
+      "ProjectGuid": "5ef3619c-71b5-4254-a9be-445da65426d9",
+      "DisplayName": "Helper",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

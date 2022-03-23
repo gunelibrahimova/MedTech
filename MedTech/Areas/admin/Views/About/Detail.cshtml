@@ -1,0 +1,14 @@
+﻿
+<tr>
+    <td>@Model.Title</td>
+    <td>@Model.Name</td>
+    <td>@Html.Raw(Model.Description)</td>
+    <br />
+    <td><img width="200" src="@Model.PhotoURL" /></td>
+    
+    <td>
+        <a href="/admin/about/delete/@Model.Id">
+            <button class="btn btn-danger">Delete</button>
+        </a>
+    </td>
+</tr>
