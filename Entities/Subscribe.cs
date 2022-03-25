@@ -8,5 +8,6 @@ namespace Entities
 {
     public class Subscribe : Base
     {
+        public string Email { get; set; }
     }
 }

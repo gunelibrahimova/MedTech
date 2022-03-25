@@ -16,8 +16,9 @@ namespace MedTech.Controllers
         private readonly NewsServices _newsServices;
         private readonly AppServices _appServices;
         private readonly PhotoServices _photoServices;
+        private readonly DetailServices _detailServices;
 
-        public TeamController(ILogger<HomeController> logger, HealthyServices healthyServices, ProfessionServices professionServices, QualityServices qualityServices, ProtectServices protectServices, PatientServices patientServices, AboutServices aboutServices, NewsServices newsServices, AppServices appServices, PhotoServices photoServices)
+        public TeamController(ILogger<HomeController> logger, HealthyServices healthyServices, ProfessionServices professionServices, QualityServices qualityServices, ProtectServices protectServices, PatientServices patientServices, AboutServices aboutServices, NewsServices newsServices, AppServices appServices, PhotoServices photoServices, DetailServices detailServices)
         {
             _logger = logger;
             _healthyServices = healthyServices;
@@ -29,12 +30,13 @@ namespace MedTech.Controllers
             _newsServices = newsServices;
             _appServices = appServices;
             _photoServices = photoServices;
+            _detailServices = detailServices;
         }
         public IActionResult Index()
         {
             TeamVM teamVM = new()
             {
-                healthy = _healthyServices.GetAll(),
+                healthy = _healthyServices.GetHealthAll(5),
                 professions = _professionServices.GetAll(),
                 quality = _qualityServices.GetAll(),
                 protects = _protectServices.GetAll(),
@@ -43,6 +45,7 @@ namespace MedTech.Controllers
                 news = _newsServices.GetAll(),
                 apps = _appServices.GetAll(),
                 photos = _photoServices.GetAll(),
+                details = _detailServices.GetAll(),
 
             };
             return View(teamVM);

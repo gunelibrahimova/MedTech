@@ -29,9 +29,14 @@ namespace Services
             _context.SaveChanges();
         }
 
-        public List<Healthy> GetHealthById(int id)
+        public List<Healthy> GetHealthAll(int id)
         {
-            return _context.health.ToList();
+            return _context.health.Where(x=>x.Id == id).ToList();
+        }
+
+        public Healthy GetHealthById(int id)
+        {
+            return _context.health.FirstOrDefault(x=>x.Id == id);
         }
 
         public void EditHealthy(Healthy healthy,  string PhotoURL)

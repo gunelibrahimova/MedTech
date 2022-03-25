@@ -13,7 +13,6 @@ namespace DataAccess
         public MedTechDbContext(DbContextOptions<MedTechDbContext> options)
             : base(options) { }
 
-
         
         public DbSet<Profession> professions { get; set;}
         public DbSet<Quality> quality { get; set; }

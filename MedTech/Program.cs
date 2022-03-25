@@ -16,6 +16,8 @@ builder.Services.AddScoped<AboutServices>();
 builder.Services.AddScoped<NewsServices>();
 builder.Services.AddScoped<AppServices>();
 builder.Services.AddScoped<PhotoServices>();
+builder.Services.AddScoped<DetailServices>();
+builder.Services.AddScoped<SkilServices>();
 
 
 

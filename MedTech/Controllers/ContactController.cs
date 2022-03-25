@@ -34,8 +34,8 @@ namespace MedTech.Controllers
         {
             ContactVM contactVM = new()
             {
-                healthy = _healthyServices.GetAll(),
-                professions = _professionServices.GetAll(),
+                healthy = _healthyServices.GetHealthAll(6),
+                professions = _professionServices.GetProfessionForContact(),
                 quality = _qualityServices.GetAll(),
                 protects = _protectServices.GetAll(),
                 patients = _patientServices.GetAll(),

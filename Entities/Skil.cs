@@ -9,6 +9,7 @@ namespace Entities
     public class Skil : Base
     {
         public string Help { get; set; }
+        public string Number { get; set; }
         public string Description { get; set; }
         public string Info { get; set; }
     }

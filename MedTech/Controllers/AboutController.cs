@@ -32,7 +32,7 @@ namespace MedTech.Controllers
         {
             AboutVM aboutVM = new()
             {
-                healthy = _healthyServices.GetHealthById(1008),
+                healthy = _healthyServices.GetHealthAll(3),
                 professions = _professionServices.GetProfessionAll(),
                 quality = _qualityServices.GetAll(),
                 protects = _protectServices.GetAll(),

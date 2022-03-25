@@ -13,6 +13,8 @@ namespace MedTech.ViewModel
         public List<News> news { get; set; }
         public List<App> apps { get; set; }
         public List<Photo> photos { get; set; }
+        public List<Detail> details { get; set; }
+        public List<Skil> skils { get; set; }
         
     }
 }

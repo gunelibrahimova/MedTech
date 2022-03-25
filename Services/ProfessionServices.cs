@@ -35,6 +35,16 @@ namespace Services
             return _context.professions.Take(3).ToList();
         }
 
+        public List<Profession> GetProfessionForContact()
+        {
+            return _context.professions.Take(4).ToList();
+        }
+
+        public List<Profession> GetProfessionForServices()
+        {
+            return _context.professions.ToList();
+        }
+
         public Profession GetById(int id )
         {
             return _context.professions.FirstOrDefault(x=>x.Id == id);

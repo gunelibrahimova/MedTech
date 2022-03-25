@@ -35,8 +35,8 @@ namespace MedTech.Controllers
 
             ServicesVM servicesVM = new()
             {
-                healthy = _healthyServices.GetAll(),
-                professions = _professionServices.GetAll(),
+                healthy = _healthyServices.GetHealthAll(4),
+                professions = _professionServices.GetProfessionForServices(),
                 quality = _qualityServices.GetAll(),
                 protects = _protectServices.GetAll(),
                 patients = _patientServices.GetAll(),

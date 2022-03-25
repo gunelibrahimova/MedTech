@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "twvsFwlrSKOgAc7G6W7aFYZ+/IE248x+g1X+3Ev5HN0=",
+  "Hash": "j8UJSAesOZc56aZNAh9OPXJMaB36XyBGmkbkls7a8+8=",
   "Source": "MedTech",
   "BasePath": "_content/MedTech",
   "Mode": "Default",
@@ -34459,6 +34459,23 @@
       "OriginalItemSpec": "wwwroot\\files\\1d0e8565-f07b-42eb-a65d-ff2577752c26feature-box-icon5.png"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\Tasks\\MedTech\\MedTech\\wwwroot\\files\\231918a0-71f0-4256-b9ad-30e73ee1bd03team-member-img.png",
+      "SourceId": "MedTech",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Tasks\\MedTech\\MedTech\\wwwroot\\",
+      "BasePath": "_content/MedTech",
+      "RelativePath": "files/231918a0-71f0-4256-b9ad-30e73ee1bd03team-member-img.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\231918a0-71f0-4256-b9ad-30e73ee1bd03team-member-img.png"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\Tasks\\MedTech\\MedTech\\wwwroot\\files\\24892a94-52ed-498a-a051-64c0809e35e4blog-img1.jpg",
       "SourceId": "MedTech",
       "SourceType": "Discovered",
@@ -34646,6 +34663,23 @@
       "OriginalItemSpec": "wwwroot\\files\\6329ccc7-ea40-4dc8-9934-4d7d823b990afeature-box-icon4.png"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\Tasks\\MedTech\\MedTech\\wwwroot\\files\\6621ea21-814d-42eb-8128-aa916cae74edbanner-left-img.png",
+      "SourceId": "MedTech",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Tasks\\MedTech\\MedTech\\wwwroot\\",
+      "BasePath": "_content/MedTech",
+      "RelativePath": "files/6621ea21-814d-42eb-8128-aa916cae74edbanner-left-img.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\6621ea21-814d-42eb-8128-aa916cae74edbanner-left-img.png"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\Tasks\\MedTech\\MedTech\\wwwroot\\files\\751e0171-96f2-44bd-adba-413374a49189fun-facts-icon1.png",
       "SourceId": "MedTech",
       "SourceType": "Discovered",
@@ -34678,6 +34712,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\7652a047-79c2-44ea-96c7-dddf23f00d1dbanner-left-img.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Tasks\\MedTech\\MedTech\\wwwroot\\files\\7a0a3b0a-12d5-459e-99ef-809355071332banner-left-img.png",
+      "SourceId": "MedTech",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Tasks\\MedTech\\MedTech\\wwwroot\\",
+      "BasePath": "_content/MedTech",
+      "RelativePath": "files/7a0a3b0a-12d5-459e-99ef-809355071332banner-left-img.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\7a0a3b0a-12d5-459e-99ef-809355071332banner-left-img.png"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Tasks\\MedTech\\MedTech\\wwwroot\\files\\7e7ae956-6314-41e7-9857-500900cbf54dauther-img.png",

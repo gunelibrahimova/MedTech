@@ -19,7 +19,7 @@ namespace Services
         }
         public List<News> GetAll()
         {
-            return _context.news.ToList();
+            return _context.news.Take(6).ToList();
         }
 
         public void Create(News news)
