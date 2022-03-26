@@ -18,7 +18,8 @@ builder.Services.AddScoped<AppServices>();
 builder.Services.AddScoped<PhotoServices>();
 builder.Services.AddScoped<DetailServices>();
 builder.Services.AddScoped<SkilServices>();
-
+builder.Services.AddScoped<SubscribeServices>();
+builder.Services.AddScoped<BookServices>();
 
 
 var connectingString = builder.Configuration.GetConnectionString("DefaultConnection");

@@ -15,6 +15,7 @@ namespace MedTech.ViewModel
         public List<Photo> photos { get; set; }
         public List<Detail> details { get; set; }
         public List<Skil> skils { get; set; }
+        public List<Book> books { get; set; }
         
     }
 }

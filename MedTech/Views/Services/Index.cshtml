@@ -78,15 +78,16 @@
                         </div>
                         <div class="core-vaule-box-con">
                            <div class="core-vaule-box-item position-relative">
-                               @foreach (var item in Model.professions)
+                               @foreach (var item in Model.patients)
                                {
                                      <figure class="mb-0">
                                  <img src="@item.PhotoURL" alt="core-vaule-box-icon" class="img-fluid">
                               </figure>
                               <div class="core-vaule-box-title">
                                  <h5>@item.Title</h5>
-                                 <span class="d-block">@item.Description</span>
+                                 <span class="d-block">Lorem ipsum dolor sit amet consectetuer adipi.</span>
                               </div>
+                              <br />
                                }
                             
                          
@@ -114,14 +115,16 @@
                         </div>
                      </div>
                      <div class="col-lg-6 col-md-7">
-                        <div class="news-letter-input-con position-relative">
-                           <div class="news-letter-input-feild">
-                              <input type="email" placeholder="Enter Your Email:" class="w-100">
-                           </div>
-                           <button>
-                           <i class="far fa-envelope"></i>
-                           </button>
+                       <form method="post">
+                             <div class="news-letter-input-con position-relative">
+                            <div class="news-letter-input-feild">
+                                <input type="email" name="Email" placeholder="Enter Your Email:" class="w-100">
+                            </div>
+                            <button>
+                                <i class="far fa-envelope"></i>
+                            </button>
                         </div>
+                        </form>
                      </div>
                   </div>
                </div>

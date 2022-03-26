@@ -85,87 +85,89 @@
       </section>
       <!-- professional-section-->
       <!-- form-section -->
-      <section>
-         <div class="w-100 float-left form-main-con">
-            <div class="container">
-               <div class="text-center">
-                  <h2>Book An Appointment</h2>
-                  <p>Seram ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt aenean<br>
-                     leo ligula porttitor eu consequat vitae eleifend tac.
-                  </p>
-               </div>
-               <div class="row">
-                  <div class="col-lg-6 order-xl-0 order-lg-0 order-2">
-                     <div class="form-left-con position-relative text-center">
+<section>
+    <div class="w-100 float-left form-main-con" id="contact-form">
+        <div class="container">
+            <div class="text-center">
+                <h2>Book An Appointment</h2>
+                <p>
+                    Seram ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt aenean<br>
+                    leo ligula porttitor eu consequat vitae eleifend tac.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 order-xl-0 order-lg-0 order-2">
+                    <div class="form-left-con position-relative text-center">
                         <figure class="mb-0 left-curve-img wow slideInLeft">
-                           <img src="assets/image/small-left-curve-img.png" alt="" class="img-fluid">
+                            <img src="assets/image/small-left-curve-img.png" alt="" class="img-fluid">
                         </figure>
                         <figure class="mb-0">
-                           <img src="assets/image/form-left-img.png" alt="form-left-img" class="mb-0 img-fluid human-img">
+                            <img src="assets/image/form-left-img.png" alt="form-left-img" class="img-fluid human-img form-left-img">
                         </figure>
                         <figure class="mb-0 right-curve-img wow slideInRight">
-                           <img src="assets/image/small-right-curve-img.png" alt="" class="img-fluid">
+                            <img src="assets/image/small-right-curve-img.png" alt="" class="img-fluid">
                         </figure>
-                     </div>
-                  </div>
-                  <div class="col-lg-6">
-                     <form class="contact-form">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form method="post" class="contact-form">
                         <div class="form-group">
-                           <label for="exampleFormControlSelect1" class="text-white">Department</label>
-                           <select class="form-control position-relative" id="exampleFormControlSelect1">
-                              <option>General Health Checkup</option>
-                              <option>General Health Checkup</option>
-                              <option>General Health Checkup</option>
-                              <option>General Health Checkup</option>
-                              <option>General Health Checkup</option>
-                           </select>
-                           <i class="fas fa-angle-down"></i>
+                            <label for="exampleFormControlSelect1" class="text-white">Department</label>
+                            <select class="form-control position-relative" id="exampleFormControlSelect1">
+                                <option>Doctors</option>
+                                <option>Hospitals</option>
+                                <option>General Medicine</option>
+                                <option>Hospice Care</option>
+                                <option>Rehab</option>
+                            </select>
+                            <i class="fas fa-angle-down"></i>
                         </div>
                         <div class="row">
-                           <div class="col-lg-6 col-md-6">
-                              <div class="form-group">    
-                                 <input type="text" class="form-control" placeholder="Name:" name="name" id="name"> 
-                              </div>
-                           </div>
-                           <div class="col-lg-6 col-md-6">
-                              <div class="form-group">
-                                 <input type="email" class="form-control" placeholder="Email:">
-                                 <small id="emailHelp" class="form-text text-muted"></small>
-                              </div>
-                           </div>
-                           <div class="col-lg-6 col-md-6">
-                              <div class="form-group">    
-                                 <input type="time" class="form-control"> 
-                              </div>
-                           </div>
-                           <div class="col-lg-6 col-md-6">
-                              <div class="form-group">
-                                 <select class="form-control position-relative">
-                                    <option>Choose Doctor </option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                 </select>
-                                 <i class="fas fa-angle-down down-icon"></i>
-                              </div>
-                           </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name:" name="Name" id="name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="email" name="Email" class="form-control" placeholder="Email:">
+                                    <small id="emailHelp" class="form-text text-muted"></small>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="time" name="Date" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <select class="form-control position-relative">
+                                        <option>Choose Doctor </option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <i class="fas fa-angle-down down-icon"></i>
+                                </div>
+                            </div>
                         </div>
+                        <input type="hidden" name="ProssionId" />
                         <div class="row">
-                           <div class="col-lg-12">
-                              <div class="textarea form-group W-100">    
-                                 <textarea class="form-control "  placeholder="Message:" rows="3" name="comments" id="comments"></textarea>
-                              </div>
-                           </div>
+                            <div class="col-lg-12">
+                                <div class="textarea form-group W-100">
+                                    <textarea class="form-control "  placeholder="Message:" rows="3" name="Message" id="comments"></textarea>
+                                </div>
+                            </div>
                         </div>
                         <button type="submit" class="btn  appointment-btn">Make Appointment</button>
-                     </form>
-                  </div>
-               </div>
+                    </form>
+                </div>
             </div>
-         </div>
-      </section>
-      <!-- form-section -->
+        </div>
+    </div>
+</section>
+<!-- form-section -->
       <!-- news-letter-section -->
       <section>
          <div class="w-100 float-left news-letter-con">
@@ -180,14 +182,16 @@
                         </div>
                      </div>
                      <div class="col-lg-6 col-md-7">
-                        <div class="news-letter-input-con position-relative">
-                           <div class="news-letter-input-feild">
-                              <input type="email" placeholder="Enter Your Email:" class="w-100">
-                           </div>
-                           <button>
-                           <i class="far fa-envelope"></i>
-                           </button>
+                        <form method="post">
+                             <div class="news-letter-input-con position-relative">
+                            <div class="news-letter-input-feild">
+                                <input type="email" name="Email" placeholder="Enter Your Email:" class="w-100">
+                            </div>
+                            <button>
+                                <i class="far fa-envelope"></i>
+                            </button>
                         </div>
+                        </form>
                      </div>
                   </div>
                </div>

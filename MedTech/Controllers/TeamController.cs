@@ -1,4 +1,5 @@
-﻿using MedTech.ViewModel;
+﻿using Entities;
+using MedTech.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Services;
 
@@ -17,8 +18,10 @@ namespace MedTech.Controllers
         private readonly AppServices _appServices;
         private readonly PhotoServices _photoServices;
         private readonly DetailServices _detailServices;
+        private readonly SubscribeServices _subscribeServices;
+        private readonly BookServices _bookServices;
 
-        public TeamController(ILogger<HomeController> logger, HealthyServices healthyServices, ProfessionServices professionServices, QualityServices qualityServices, ProtectServices protectServices, PatientServices patientServices, AboutServices aboutServices, NewsServices newsServices, AppServices appServices, PhotoServices photoServices, DetailServices detailServices)
+        public TeamController(ILogger<HomeController> logger, HealthyServices healthyServices, ProfessionServices professionServices, QualityServices qualityServices, ProtectServices protectServices, PatientServices patientServices, AboutServices aboutServices, NewsServices newsServices, AppServices appServices, PhotoServices photoServices, DetailServices detailServices, SubscribeServices subscribeServices, BookServices bookServices)
         {
             _logger = logger;
             _healthyServices = healthyServices;
@@ -31,6 +34,8 @@ namespace MedTech.Controllers
             _appServices = appServices;
             _photoServices = photoServices;
             _detailServices = detailServices;
+            _subscribeServices = subscribeServices;
+            _bookServices = bookServices;
         }
         public IActionResult Index()
         {
@@ -49,6 +54,21 @@ namespace MedTech.Controllers
 
             };
             return View(teamVM);
+        }
+
+        [HttpPost]
+        public IActionResult Index(Subscribe subscribe, Book book)
+        {
+            if (book.Name == null & book.Message == null & book.Date == null)
+            {
+                _subscribeServices.Post(subscribe);
+            }
+            else
+            {
+                _bookServices.Post(book);
+            }
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

@@ -23,6 +23,11 @@ namespace Services
             return _context.patients.ToList();
         }
 
+        public List<Patient> GetPatientAll()
+        {
+            return _context.patients.Take(3).ToList();
+        }
+
         public void Create(Patient patient)
         {
             _context.Add(patient);

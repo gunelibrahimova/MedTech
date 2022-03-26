@@ -26,5 +26,6 @@ namespace DataAccess
         public DbSet<Detail> details { get; set; }
         public DbSet<Skil> skils { get; set; }
         public DbSet<Healthy> health { get; set; }
+        public DbSet<Book> books { get; set; }
     }
 }

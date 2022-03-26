@@ -227,33 +227,33 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form class="contact-form">
+                    <form method="post" class="contact-form">
                         <div class="form-group">
                             <label for="exampleFormControlSelect1" class="text-white">Department</label>
                             <select class="form-control position-relative" id="exampleFormControlSelect1">
-                                <option>General Health Checkup</option>
-                                <option>General Health Checkup</option>
-                                <option>General Health Checkup</option>
-                                <option>General Health Checkup</option>
-                                <option>General Health Checkup</option>
+                                <option>Doctors</option>
+                                <option>Hospitals</option>
+                                <option>General Medicine</option>
+                                <option>Hospice Care</option>
+                                <option>Rehab</option>
                             </select>
                             <i class="fas fa-angle-down"></i>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name:" name="name" id="name">
+                                    <input type="text" class="form-control" placeholder="Name:" name="Name" id="name">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email:">
+                                    <input type="email" name="Email" class="form-control" placeholder="Email:">
                                     <small id="emailHelp" class="form-text text-muted"></small>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="time" class="form-control">
+                                    <input type="time" name="Date" class="form-control">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
@@ -269,10 +269,11 @@
                                 </div>
                             </div>
                         </div>
+                        <input type="hidden" name="ProssionId" />
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="textarea form-group W-100">
-                                    <textarea class="form-control " placeholder="Message:" rows="3" name="comments" id="comments"></textarea>
+                                    <textarea class="form-control "  placeholder="Message:" rows="3" name="Message" id="comments"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -447,14 +448,17 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-7">
-                        <div class="news-letter-input-con position-relative">
+                        <form method="post">
+                             <div class="news-letter-input-con position-relative">
                             <div class="news-letter-input-feild">
-                                <input type="email" placeholder="Enter Your Email:" class="w-100">
+                                <input type="email" name="Email" placeholder="Enter Your Email:" class="w-100">
                             </div>
                             <button>
                                 <i class="far fa-envelope"></i>
                             </button>
                         </div>
+                        </form>
+                       
                     </div>
                 </div>
             </div>

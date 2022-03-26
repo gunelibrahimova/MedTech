@@ -1,7 +1,7 @@
 ﻿@model ContactVM    
 
 @{
-    ViewData["Title"] = "Services Page";
+    ViewData["Title"] = "Contact Page";
 }
 
 <section>
@@ -68,23 +68,23 @@
                   </h2>
                </div>
                <div id="form_result"></div>
-               <form class="contact-form-plan-box" id="contactpage" method="POST">
+               <form class="contact-form-plan-box" id="contactpage" method="post">
                   <div class="form-row">
                      <div class="col-lg-6 col-md-6">
                         <div class="form-group">    
-                           <input type="text" class="form-control" placeholder="Your Name:" name="name" id="name"> 
+                           <input type="text" class="form-control" placeholder="Your Name:" name="Name" id="name"> 
                         </div>
                      </div>
                      <div class="col-lg-6 col-lg-6 col-md-6">
                         <div class="form-group">    
-                           <input type="email" class="form-control" placeholder="Your Email:" name="email" id="email"> 
+                           <input type="email" class="form-control" placeholder="Your Email:" name="Email" id="email"> 
                         </div>
                      </div>
                   </div>
                   <div class="form-row">
                      <div class="col-lg-6 col-lg-6 col-md-6">
                         <div class="form-group">    
-                           <input type="tel" class="form-control" placeholder="Phone:" name="phone" id="phone"> 
+                           <input type="datetime" class="form-control" placeholder="Date:" name="Date" id="phone"> 
                         </div>
                      </div>
                      <div class="col-lg-6 col-lg-6 col-md-6">
@@ -102,7 +102,7 @@
                   </div>
                   <div>
                      <div class="textarea form-group">    
-                        <textarea class="form-control"  placeholder="Message:" rows="3" name="comments" id="comments"></textarea>
+                        <textarea class="form-control"  placeholder="Message:" rows="3" name="Message" id="comments"></textarea>
                      </div>
                   </div>
                   <div class="submitform-button">
@@ -134,14 +134,16 @@
                         </div>
                      </div>
                      <div class="col-lg-6 col-md-7">
-                        <div class="news-letter-input-con position-relative">
-                           <div class="news-letter-input-feild">
-                              <input type="email" placeholder="Enter Your Email:" class="w-100">
-                           </div>
-                           <button>
-                           <i class="far fa-envelope"></i>
-                           </button>
+                         <form method="post">
+                             <div class="news-letter-input-con position-relative">
+                            <div class="news-letter-input-feild">
+                                <input type="email" name="Email" placeholder="Enter Your Email:" class="w-100">
+                            </div>
+                            <button>
+                                <i class="far fa-envelope"></i>
+                            </button>
                         </div>
+                        </form>
                      </div>
                   </div>
                </div>

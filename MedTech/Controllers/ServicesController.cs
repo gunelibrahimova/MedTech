@@ -1,4 +1,5 @@
-﻿using MedTech.ViewModel;
+﻿using Entities;
+using MedTech.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Services;
 
@@ -16,8 +17,9 @@ namespace MedTech.Controllers
         private readonly NewsServices _newsServices;
         private readonly AppServices _appServices;
         private readonly PhotoServices _photoServices;
+        private readonly SubscribeServices _subscribeServices;
 
-        public ServicesController(ILogger<HomeController> logger, HealthyServices healthyServices, ProfessionServices professionServices, QualityServices qualityServices, ProtectServices protectServices, PatientServices patientServices, AboutServices aboutServices, NewsServices newsServices, AppServices appServices, PhotoServices photoServices)
+        public ServicesController(ILogger<HomeController> logger, HealthyServices healthyServices, ProfessionServices professionServices, QualityServices qualityServices, ProtectServices protectServices, PatientServices patientServices, AboutServices aboutServices, NewsServices newsServices, AppServices appServices, PhotoServices photoServices, SubscribeServices subscribeServices)
         {
             _logger = logger;
             _healthyServices = healthyServices;
@@ -29,6 +31,7 @@ namespace MedTech.Controllers
             _newsServices = newsServices;
             _appServices = appServices;
             _photoServices = photoServices;
+            _subscribeServices = subscribeServices;
         }
         public IActionResult Index()
         {
@@ -47,6 +50,13 @@ namespace MedTech.Controllers
 
             };
             return View(servicesVM);
+        }
+
+        [HttpPost]
+        public IActionResult Index(Subscribe subscribe)
+        {
+            _subscribeServices.Post(subscribe);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

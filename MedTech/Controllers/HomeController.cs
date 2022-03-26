@@ -21,9 +21,11 @@ namespace MedTech.Controllers
         private readonly PhotoServices _photoServices;
         private readonly DetailServices _detailServices;
         private readonly SkilServices _skyServices;
-        
+        private readonly SubscribeServices _subscribeServices;
+        private readonly BookServices _bookServices;
 
-        public HomeController(ILogger<HomeController> logger, HealthyServices healthyServices, ProfessionServices professionServices, QualityServices qualityServices, ProtectServices protectServices, PatientServices patientServices, AboutServices aboutServices, NewsServices newsServices, AppServices appServices, PhotoServices photoServices, DetailServices detailServices, SkilServices skyServices)
+
+        public HomeController(ILogger<HomeController> logger, HealthyServices healthyServices, ProfessionServices professionServices, QualityServices qualityServices, ProtectServices protectServices, PatientServices patientServices, AboutServices aboutServices, NewsServices newsServices, AppServices appServices, PhotoServices photoServices, DetailServices detailServices, SkilServices skyServices, SubscribeServices subscribeServices, BookServices bookServices)
         {
             _logger = logger;
             _healthyServices = healthyServices;
@@ -37,6 +39,8 @@ namespace MedTech.Controllers
             _photoServices = photoServices;
             _detailServices = detailServices;
             _skyServices = skyServices;
+            _subscribeServices = subscribeServices;
+            _bookServices = bookServices;
         }
 
         public IActionResult Index()
@@ -54,17 +58,30 @@ namespace MedTech.Controllers
                 photos = _photoServices.GetAll(),
                 details = _detailServices.GetAll(),
                 skils = _skyServices.GetAll(),
-               
-                
+                books = _bookServices.GetAll(),
             };
+
+
+
             return View(homeVM);
         }
 
-        //[HttpPost]
-        //public IActionResult Index(Subscribe subscribe)
-        //{
-            
-        //}
+        [HttpPost]
+        public IActionResult Index(Subscribe subscribe, Book book)
+        {
+            if (book.Name ==null & book.Message == null & book.Date == null)
+            {
+                _subscribeServices.Post(subscribe);
+            }
+            else
+            {
+                _bookServices.Post(book);
+            }
+           
+            return RedirectToAction(nameof(Index));
+        }
+
+
 
         public IActionResult Privacy()
         {

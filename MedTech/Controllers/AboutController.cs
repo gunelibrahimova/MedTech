@@ -1,4 +1,5 @@
-﻿using MedTech.ViewModel;
+﻿using Entities;
+using MedTech.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Services;
 
@@ -15,8 +16,10 @@ namespace MedTech.Controllers
         private readonly NewsServices _newsServices;
         private readonly AppServices _appServices;
         private readonly PhotoServices _photoServices;
+        private readonly SubscribeServices _subscribeServices;
+        private readonly BookServices _bookServices;
 
-        public AboutController(HealthyServices healthyServices, ProfessionServices professionServices, QualityServices qualityServices, ProtectServices protectServices, PatientServices patientServices, AboutServices aboutServices, NewsServices newsServices, AppServices appServices, PhotoServices photoServices)
+        public AboutController(HealthyServices healthyServices, ProfessionServices professionServices, QualityServices qualityServices, ProtectServices protectServices, PatientServices patientServices, AboutServices aboutServices, NewsServices newsServices, AppServices appServices, PhotoServices photoServices, SubscribeServices subscribeServices, BookServices bookServices)
         {
             _healthyServices = healthyServices;
             _professionServices = professionServices;
@@ -27,6 +30,8 @@ namespace MedTech.Controllers
             _newsServices = newsServices;
             _appServices = appServices;
             _photoServices = photoServices;
+            _subscribeServices = subscribeServices;
+            _bookServices = bookServices;
         }
         public IActionResult Index()
         {
@@ -44,6 +49,21 @@ namespace MedTech.Controllers
 
             };
             return View(aboutVM);
+        }
+
+        [HttpPost]
+        public IActionResult Index(Subscribe subscribe, Book book)
+        {
+            if (book.Name == null & book.Message == null & book.Date == null)
+            {
+                _subscribeServices.Post(subscribe);
+            }
+            else
+            {
+                _bookServices.Post(book);
+            }
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }
